@@ -1,0 +1,21 @@
+import java.util.Arrays;
+
+class Solution {
+    public boolean isAnagram(String s, String t) {
+
+        char[] a = s.toCharArray();
+        char[] b = t.toCharArray();
+
+        Arrays.sort(a);
+        Arrays.sort(b);
+
+        String B = new String(b);
+        String ax = new String(a);
+
+        if (ax.equals(B)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
